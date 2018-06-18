@@ -40,6 +40,9 @@ public class NumberConverter {
                 if (num < 0) {
                     return "Negative numbers are not supported";
                 }
+                if ( num > 5000){
+                    return "Roman numeric system does not support that big numbers";
+                }
                 return arabicToRoman(num);
             }
             default:
